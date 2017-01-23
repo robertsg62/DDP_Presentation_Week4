@@ -1,0 +1,73 @@
+<style>
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+}
+.midcenter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+.small-code pre code {
+  font-size: 1em;
+}
+
+.reveal h3 {
+  word-wrap: normal;
+  -moz-hyphens: none;
+}
+.reveal h1 {
+  word-wrap: normal;
+  -moz-hyphens: none;
+}
+</style>
+
+DDP Week 4 Presentation
+========================================================
+autosize: true  
+transition: rotate
+transition-speed: slow
+author: Gregory Roberts
+date: 22 January 2017
+<div class="midcenter"><div style="margin-left:-0px;margin-top:-50px;"><img style="margin:0px; background-color:transparent; border:0px; box-shadow:none;" src="images/globe.png"></img></div></div>
+
+Project
+========================================================
+- A shiny application was developed to show the mean changes for Global climate from 1880 to 2016
+- The bar charts presented allow for a user to use the cursor to find mean change for a specific year.
+- The shiny application is found here:
+  + <a href="https://robertsg62.shinyapps.io/ddp_project4/">Global Mean Estimates Based on Land-Surface Air Temperature Anomalies Only</a>
+- Github repository is found here:
+  + <a href="https://github.com/robertsg62/DDP_Presentation_Week4">DDP_Presentation_Week4</a> 
+
+Data Set
+========================================================
+- The data set contains the mean differences from 1880 - 2015
+- The columns used from the data set are:
+```{r echo=FALSE}
+df <- read.csv("https://data.giss.nasa.gov/gistemp/tabledata_v3/ZonAnn.Ts+dSST.csv")
+df1 <- df[,1:4]
+names(df1)
+```
+
+Charts of Global, Northern Hemisphere, and Southern Hemisphere
+========================================================
+- In the slides below, the charts of the mean differences of data developed using plot_ly package is presented 
+
+<div style="margin-left:-250px;margin-top:0px;">
+  <img style="margin:10px; width="250px"; height="250px"; background-color:transparent; border:0px; box-shadow:none;" src="DDP_RPresentation-figure/global.png"></img>
+  <img style="margin:10px; width="250px"; height="250px"; background-color:transparent; border:0px; box-shadow:none;" src="DDP_RPresentation-figure/nhem.png"></img>
+  <img style="margin:10px; width="250px"; height="250px" background-color:transparent; border:0px; box-shadow:none;" src="DDP_RPresentation-figure/shem.png"></img>
+</div>
+
+Summary
+========================================================
+- The charts show that the temperature has increased globally
+- This doesn't not indicate global warming, but global climate change
+<br/><br/><br/>
+- Data used in this presentation is from NASA GISS Temperature Analysis (GISTEMP) site
+  + The link to the site is at <a href="https://data.giss.nasa.gov/gistemp/">NASA.gov</a>
