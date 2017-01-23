@@ -5,7 +5,7 @@ ui <- fluidPage(
     titlePanel("Global Mean Estimates Based on Land-Surface Air Temperature Anomalies Only"),
     sidebarLayout(
         sidebarPanel(
-            em("In the text output, the year and median differences are displayed.")
+            em("Moving the cursor over the bar charts will display the year and median differences for the year selected.")
         ),
         mainPanel(
             br(),br(),

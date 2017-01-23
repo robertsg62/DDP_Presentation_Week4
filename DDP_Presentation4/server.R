@@ -3,7 +3,7 @@ server <- function(input, output) {
 
     output$plot1 <- renderPlotly({
         p1 <- plot_ly(df, x = ~Year, y = ~Glob, color=~Year, type="bar") 
-        p1 %>% layout(title="Global Hemisphere", xaxis=list(title="Year")
+        p1 %>% layout(title="Global", xaxis=list(title="Year")
                       , yaxis=list(title="Annual Means"))
     })
 
