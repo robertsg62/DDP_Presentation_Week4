@@ -33,7 +33,7 @@ transition: rotate
 transition-speed: slow
 author: Gregory Roberts
 date: 22 January 2017
-<div class="midcenter"><div style="margin-left:-0px;margin-top:-50px;"><img style="margin:0px; background-color:transparent; border:0px; box-shadow:none;" src="images/globe.png"></img></div></div>
+<div class="midcenter"><div style="margin-left:150px;margin-top:0px;"><img style="margin:0px; background-color:transparent; border:0px; box-shadow:none;" src="images/globe.png"></img></div></div>
 
 Project
 ========================================================
